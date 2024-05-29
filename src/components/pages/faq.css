@@ -1,0 +1,130 @@
+.faq-section {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.faq-section .title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  box-sizing: border-box;
+  margin: 0px auto 24px;
+  min-width: 0px;
+  flex: 1 1 0%;
+  width: fit-content;
+  text-align: center;
+}
+
+.faq-section .faq-item {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.faq-section .faq-item:hover {
+  background-color: #122329;
+}
+
+.faq-section .faq-item:hover .drop-icon {
+  background-color: rgb(119, 119, 119) !important;
+}
+
+.faq-section .faq-item:hover .drop-icon svg {
+  color: #000;
+}
+
+.faq-section .faq-item:hover .drop-icon svg path {
+  color: #000;
+}
+
+.faq-section .faq-item .question-section {
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+}
+
+.faq-section .faq-item .question-section .no {
+  margin-right: 16px;
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgb(119, 119, 119);
+  background-color: inherit;
+}
+
+.faq-section .faq-item .question-section .question {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  flex: 1;
+  margin-right: 8px;
+  background-color: inherit;
+}
+
+.faq-section .faq-item .question-section .drop-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+}
+
+.faq-section .faq-item .question-section .drop-icon svg {
+  background-color: inherit;
+}
+
+.faq-section .faq-item .question-section .drop-icon svg path {
+  background-color: inherit;
+}
+
+.faq-section .faq-item .answer-section {
+  padding-left: 48px;
+  padding-right: 48px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 16px 0px 0px;
+  min-width: 0px;
+  display: block;
+  color: rgb(132, 142, 156);
+  background-color: inherit;
+}
+
+.faq-section .faq-item .answer-section a {
+  color: rgb(240, 185, 11);
+  word-break: break-word;
+  background-color: inherit;
+}
+
+.faq-section .faq-item .answer-section li {
+  color: rgb(132, 142, 156);
+  background-color: inherit;
+}
+
+/* @media only screen and (max-width: 1030px) {
+  .faq-section .title {
+    margin-bottom: 48px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+  }
+} */

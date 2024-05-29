@@ -1,0 +1,245 @@
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.5s;
+  background-color: #0f1117;
+  font-family: white;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  min-height: 12vh;
+  min-width: 100%;
+  z-index: 10;
+  background: #0f1423;
+  border-bottom: 2px solid #0c2d48;
+}
+
+.navigation .logo {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 50px;
+  color: #b1d4e0;
+  font-size: 20px;
+  line-height: 38px;
+}
+
+.navigation .logo h1 {
+  color: #b1d4e0;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.navigation .menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  margin: auto 20px auto 0;
+}
+
+.navigation .humbarger {
+  margin-right: 20px;
+  display: none;
+}
+
+.navigation .humbarger .bar {
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  background: #b1d4e0;
+}
+
+.navigation .menu-list li a {
+  color: #b1d4e0;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 1s ease, border 1s ease;
+  text-decoration: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 120;
+  left: 0;
+  background-color: #272730;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 0.8;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  opacity: 1;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  margin: auto;
+  position: relative;
+  top: 120px;
+}
+
+* {
+  color: white;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.input-container {
+  display: flex;
+  background-color: inherit;
+  border: 1px yellow solid;
+}
+
+input[type="text"],
+.button {
+  padding: 0.8rem 1rem;
+}
+
+input[type="text"] {
+  flex-grow: 2;
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: inherit;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+.button {
+  background-color: yellow;
+  cursor: pointer;
+
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -moz-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.button:hover {
+  background: #f6c7c7;
+}
+
+.button p {
+  color: #000;
+}
+
+input[type="text"]::placeholder {
+  font-size: 1rem;
+}
+
+.checkbox-dropdown {
+  width: 210px;
+  border: 1px solid #aaa;
+  padding: 10px;
+  position: relative;
+  margin: 0 auto;
+  user-select: none;
+}
+
+/* Display CSS arrow to the right of the dropdown text */
+.checkbox-dropdown:after {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 6px solid transparent;
+  border-top-color: white;
+  top: 50%;
+  right: 10px;
+  margin-top: -3px;
+}
+
+/* Reverse the CSS arrow when the dropdown is active */
+.checkbox-dropdown.is-active:after {
+  border-bottom-color: yellow;
+  border-top-color: transparent;
+  margin-top: -9px;
+}
+
+.checkbox-dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%; /* align the dropdown right below the dropdown text */
+  border: inherit;
+  border-top: none;
+  left: -1px; /* align the dropdown to the left */
+  right: -1px; /* align the dropdown to the right */
+  opacity: 0; /* hide the dropdown */
+
+  transition: opacity 0.4s ease-in-out;
+
+  pointer-events: none; /* avoid mouse click events inside the dropdown */
+}
+.is-active .checkbox-dropdown-list {
+  opacity: 1; /* display the dropdown */
+  pointer-events: auto; /* make sure that the user still can select checkboxes */
+}
+
+.checkbox-dropdown-list li label {
+  border-bottom: 1px solid silver;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 0.2s ease-out;
+}
+
+.checkbox-dropdown-list li label:hover {
+  background-color: #555;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+input[type="text"] {
+  font-family: "Alata", sans-serif;
+  margin: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
